@@ -53,9 +53,9 @@
             renderEmployees()
             rendersingleEmployee()
         }
-         if(e.target.tagName==="I"){
-            employees=employees.filter(emp>String(emp.id)!==e.target.parentNode.id)
-        }
+        if (e.target.tagName === "I") {
+    employees = employees.filter(emp => String(emp.id) !== e.target.parentNode.id);
+}
         if(String(seletectedEmployeeId)===e.target.parentNode.id){
             seletectedEmployeeId=employees[0]?.id || -1;
             seletectedEmployee=employees[0]|| {}
